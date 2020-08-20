@@ -12,6 +12,9 @@ public class Application {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(Application.class);
 
+        AnimalsController animalsController = (AnimalsController)context.getBean("animalsController");
+        System.out.println(animalsController.sayAnything());
+
         I18nController i18nController = (I18nController)context.getBean("i18nController");
         System.out.println(i18nController.sayHello());
 
