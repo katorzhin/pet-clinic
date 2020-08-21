@@ -1,4 +1,4 @@
-package com.katorzhin.spring.petclinic.controller;
+package petclinic.controller;
 
 import com.katorzhin.spring.petclinic.service.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
