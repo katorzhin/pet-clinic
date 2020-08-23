@@ -11,6 +11,9 @@
 
     <artifactId>pet-clinic-data</artifactId>
 
+    <prerequisites>
+<!--        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>-->
+    </prerequisites>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -52,6 +55,14 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
