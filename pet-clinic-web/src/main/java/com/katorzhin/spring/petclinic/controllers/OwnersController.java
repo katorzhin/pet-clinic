@@ -1,4 +1,4 @@
-package controllers;
+package com.katorzhin.spring.petclinic.controllers;
 
 import com.katorzhin.spring.petclinic.services.OwnerService;
 import org.springframework.stereotype.Controller;
