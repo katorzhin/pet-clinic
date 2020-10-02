@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout::layout(~{::body},'owners')}">
 <head>
     <meta charset="UTF-8">
-    <title>List of pets owners</title>
+    <title>List of Vets</title>
 </head>
 <body>
-<!--/*@thymesVar id="owner" type="com.katorzhin.spring.petclinic.model.Owner"*/-->
-<h1 th:text="'List of owners'">List of owners</h1>
+<!--/*@thymesVar id="vets" type="com.katorzhin.spring.petclinic.model.Owner"*/-->
+
+<h1 th:text="'List of Vets'">List of Vets....</h1>
+
 <table>
     <thead>
     <tr>
-        <th>Id</th>
-        <th>First Name</th>
-        <th>Second Name</th>
+        <th style="width: 150px;">Id</th>
+        <th style="width: 150px;">First Name</th>
+        <th style="width: 150px;">Second Name</th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="ownre : ${owners}">
+
+    <tr th:each="owner : ${owners}">
         <td th:text="${owner.id}">1</td>
         <td th:text="${owner.firstName}">Drue</td>
         <td th:text="${owner.lastName}">Jack</td>
@@ -25,3 +28,5 @@
 </table>
 </body>
 </html>
+
+
