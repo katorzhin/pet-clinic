@@ -60,6 +60,13 @@ public class DataLoader implements CommandLineRunner {
         owner2.setCity("Kharkiv");
         owner2.setTelephone("+380638029751");
 
+        Pet fionaCat = new Pet();
+        fionaCat.setName("Dusa");
+        fionaCat.setOwner(owner2);
+        fionaCat.setBirthDate(LocalDate.now());
+        fionaCat.setPetType(savedCatPetType);
+        owner2.getPets().add(fionaCat);
+
         ownerService.save(owner2);
 
         System.out.println("Loaded owners : .....");
