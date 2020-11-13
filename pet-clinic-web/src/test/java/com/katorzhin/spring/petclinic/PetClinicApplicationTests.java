@@ -1,4 +1,4 @@
-package petclinic;
+package com.katorzhin.spring.petclinic;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
